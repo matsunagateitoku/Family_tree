@@ -1,0 +1,156 @@
+:root {
+  --ink: #2b2620;
+  --paper: #faf6ef;
+  --line: #d8cfc0;
+  --accent: #7a4b2a;
+  --muted: #8a7f6e;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Georgia, 'Times New Roman', serif;
+  background: var(--paper);
+  color: var(--ink);
+  line-height: 1.5;
+}
+
+header {
+  padding: 2rem 1.5rem 1rem;
+  text-align: center;
+  border-bottom: 1px solid var(--line);
+}
+
+header h1 {
+  margin: 0 0 0.25rem;
+  font-size: 1.8rem;
+}
+
+header p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+a:hover { text-decoration: underline; }
+
+/* Generation grid on the home page */
+.generation {
+  margin-bottom: 2rem;
+}
+.generation h2 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 0.4rem;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.person-card {
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 0.75rem;
+  text-align: center;
+  transition: box-shadow 0.15s ease;
+}
+.person-card:hover {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.person-card img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 4px;
+  background: var(--line);
+  margin-bottom: 0.5rem;
+}
+
+.person-card .name {
+  font-weight: bold;
+  display: block;
+}
+.person-card .years {
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+/* Profile page */
+.profile {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 2rem;
+}
+@media (max-width: 600px) {
+  .profile { grid-template-columns: 1fr; }
+}
+
+.profile img.portrait {
+  width: 100%;
+  border-radius: 6px;
+  background: var(--line);
+  aspect-ratio: 3/4;
+  object-fit: cover;
+}
+
+.profile h1 {
+  margin: 0 0 0.25rem;
+}
+.profile .meta {
+  color: var(--muted);
+  margin-bottom: 1.25rem;
+}
+
+.relations {
+  margin: 1.25rem 0;
+  font-size: 0.95rem;
+}
+.relations dt {
+  color: var(--muted);
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 0.06em;
+  margin-top: 0.75rem;
+}
+.relations dd {
+  margin: 0.15rem 0 0;
+}
+
+.stories {
+  margin-top: 1.5rem;
+}
+.stories h2 {
+  font-size: 1.1rem;
+}
+.stories ul {
+  padding-left: 1.2rem;
+}
+.stories li {
+  margin-bottom: 0.6rem;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}

@@ -1,0 +1,13 @@
+{
+  "id": "betsy-lineberger",
+  "name": "Betsy Lineberger",
+  "birth": "1940-04-04",
+  "death": "",
+  "birthplace": "",
+  "photo": "images/betsy-lineberger.jpg",
+  "parents": [],
+  "spouses": ["buck-lineberger"],
+  "children": ["scott-lineberger", "chip-lineberger"],
+  "bio": "",
+  "stories": []
+}

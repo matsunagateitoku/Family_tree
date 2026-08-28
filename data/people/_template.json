@@ -1,0 +1,13 @@
+{
+  "id": "first-last",
+  "name": "First Last",
+  "birth": "YYYY-MM-DD",
+  "death": "",
+  "birthplace": "",
+  "photo": "images/first-last.jpg",
+  "parents": [],
+  "spouses": [],
+  "children": [],
+  "bio": "",
+  "stories": []
+}

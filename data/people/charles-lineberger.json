@@ -1,0 +1,13 @@
+{
+  "id": "charles-lineberger",
+  "name": "Charles Lineberger",
+  "birth": "",
+  "death": "",
+  "birthplace": "",
+  "photo": "images/charles-lineberger.jpg",
+  "parents": ["sherrill-lineberger-sr", "betty-lineberger"],
+  "spouses": ["april-lineberger"],
+  "children": ["elena-lineberger", "drew-lineberger"],
+  "bio": "Known as Dick.",
+  "stories": []
+}
